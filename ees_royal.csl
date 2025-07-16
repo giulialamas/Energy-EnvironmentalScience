@@ -69,7 +69,7 @@
 
   <macro name="title">
     <choose>
-      <if type="bill book graphic legal_case legislation motion_picture report song" match="any">
+      <if type="bill book graphic legal_case legislation motion_picture report song thesis" match="any">
         <text variable="title" font-style="italic"/>
       </if>
       <else>
@@ -146,6 +146,7 @@
           <text macro="title" suffix=", "/>
           <group delimiter=", ">
             <text variable="genre"/>
+            <text variable="institution"/>
             <text variable="publisher"/>
             <text macro="issued"/>
           </group>
