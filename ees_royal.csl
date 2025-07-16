@@ -69,7 +69,7 @@
 
   <macro name="title">
     <choose>
-      <if type="bill book graphic legal_case legislation motion_picture report song thesis" match="any">
+      <if type="bill book graphic legal_case legislation motion_picture report song thesis manuscript" match="any">
         <text variable="title" font-style="italic"/>
       </if>
       <else>
@@ -142,7 +142,7 @@
       <text variable="citation-number"/>
       <text macro="author" suffix=", "/>
       <choose>
-        <if type="thesis">
+        <if type="thesis report manuscript">
           <text macro="title" suffix=", "/>
           <group delimiter=", ">
             <text variable="genre"/>
