@@ -143,6 +143,7 @@
       <text macro="author" suffix=", "/>
       <choose>
         <if type="thesis">
+          <text macro="title" suffix=", "/>
           <group delimiter=", ">
             <text variable="genre"/>
             <text variable="publisher"/>
@@ -229,6 +230,7 @@
           </group>
         </else-if>
         <else>
+          <text macro="title" suffix=", "/>
           <group delimiter=", ">
             <text variable="container-title" form="short" font-style="italic"/>
             <text macro="issued"/>
